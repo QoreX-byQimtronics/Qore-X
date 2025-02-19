@@ -1,0 +1,51 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_QOREXWIFI,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup_loop" id="/XNk{ywHKgH[)X=i[o-/" x="63" y="188">
+    <statement name="DO">
+      <block type="tft" id="kW0~*mp+{Yf.2qAS^oQ`" inline="false">
+        <field name="Rotation">3</field>
+        <value name="Colour">
+          <block type="Colour" id="W;UK/dZ-wDGFU[Aa,1Vt" inline="false">
+            <field name="Colour">TFT_BLACK</field>
+          </block>
+        </value>
+        <next>
+          <block type="Button" id="$K{ytMCPzNUKxAcYAP;Y">
+            <field name="button">Button 1</field>
+            <value name="ValX">
+              <shadow type="math_number" id="iK{HslH3(*6pWj{^QOr$">
+                <field name="NUM">3</field>
+              </shadow>
+            </value>
+            <value name="ValY">
+              <shadow type="math_number" id="vAI{_WlcGEHOsX)B^~!,">
+                <field name="NUM">50</field>
+              </shadow>
+            </value>
+            <value name="textSize">
+              <shadow type="math_number" id="*Ph;l_zS15PdL]Ve.d#c">
+                <field name="NUM">5</field>
+              </shadow>
+            </value>
+            <value name="Colour">
+              <block type="Colour" id="gp$;FVU.Mcy+8Y)*H^g1" inline="false">
+                <field name="Colour">TFT_RED</field>
+              </block>
+            </value>
+            <value name="Colour1">
+              <block type="Colour" id="U;uFn]yVVrhLzotv[1p." inline="false">
+                <field name="Colour">TFT_BLACK</field>
+              </block>
+            </value>
+            <value name="Colour2">
+              <block type="Colour" id="01?Mh@oA9h]gHe%sM8[c" inline="false">
+                <field name="Colour">TFT_WHITE</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

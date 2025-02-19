@@ -1,0 +1,15 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup_loop" id="do6d{hc..cx{xBuQ$hmV" x="63" y="338">
+    <statement name="DO">
+      <block type="playSound" id="4^2Y/3C]?Qn8)mPe:LVK">
+        <value name="sound">
+          <block type="animalSound" id="EZO..k!GMCyJ6m3f]j7t">
+            <field name="animal">cat</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

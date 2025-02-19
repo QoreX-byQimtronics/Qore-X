@@ -1,0 +1,404 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup" id="r*U~z1ilC8JS$.Tmv]U_" inline="true" x="113" y="162">
+    <statement name="DO">
+      <block type="variables_set_init" id="2sKd#Xf67g}iR:%b?C~4" inline="true">
+        <field name="VAR">updateScreen</field>
+        <field name="VARIABLE_SETTYPE_TYPE">BOOLEAN</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id=".R4N30QKikpWU0tp~9%k" inline="true">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="tft" id="`N.o*C0#;6GF*V0+;NvN" inline="true">
+            <field name="Rotation">2</field>
+            <value name="Colour">
+              <block type="Colour" id="ag+e=-c#t,PeG1tmseYE" inline="true">
+                <field name="Colour">TFT_CYAN</field>
+              </block>
+            </value>
+            <next>
+              <block type="touch_init" id="^^76F/ak~b:R(Z]BV6*K" inline="true">
+                <next>
+                  <block type="Button" id="UR=G%HQ-*Y:QS3YD%s*`" inline="true">
+                    <field name="button">RESET</field>
+                    <value name="ValX">
+                      <shadow type="math_number" id="Obp|fznMSwPXH^,Odp$%">
+                        <field name="NUM">126</field>
+                      </shadow>
+                    </value>
+                    <value name="ValY">
+                      <shadow type="math_number" id="s!V*hl%ht*sv)XRdIES_">
+                        <field name="NUM">170</field>
+                      </shadow>
+                    </value>
+                    <value name="textSize">
+                      <shadow type="math_number" id="BoJL5f*1bNS|Zt@cDa=v">
+                        <field name="NUM">3</field>
+                      </shadow>
+                    </value>
+                    <value name="Colour">
+                      <block type="Colour" id="@O~i20YKb`=O{+Y[ngd)" inline="true">
+                        <field name="Colour">TFT_RED</field>
+                      </block>
+                    </value>
+                    <value name="Colour1">
+                      <block type="Colour" id="1cL^[,cO;!r:U_h2_JSx" inline="true">
+                        <field name="Colour">TFT_BLACK</field>
+                      </block>
+                    </value>
+                    <value name="Colour2">
+                      <block type="Colour" id="ZIFoa+i?)V05$bPLkAVc" inline="true">
+                        <field name="Colour">TFT_GREEN</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="Button" id="LhX[$v?1pS6VfNJU||75" inline="true">
+                        <field name="button">START</field>
+                        <value name="ValX">
+                          <shadow type="math_number" id="I{luzeOB]B,=Kd+8`De$">
+                            <field name="NUM">12</field>
+                          </shadow>
+                        </value>
+                        <value name="ValY">
+                          <shadow type="math_number" id="=j^ld^}vM]/D[{-`[^Nv">
+                            <field name="NUM">170</field>
+                          </shadow>
+                        </value>
+                        <value name="textSize">
+                          <shadow type="math_number" id=":Dho4:2`LI]?f~asOKyg">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                        <value name="Colour">
+                          <block type="Colour" id="[|*d+R=+92cYb)S$hqo%" inline="true">
+                            <field name="Colour">TFT_GREEN</field>
+                          </block>
+                        </value>
+                        <value name="Colour1">
+                          <block type="Colour" id="9c!}QxRtY!`bOOl8jqq|" inline="true">
+                            <field name="Colour">TFT_BLACK</field>
+                          </block>
+                        </value>
+                        <value name="Colour2">
+                          <block type="Colour" id="TJr9i!o~m8KTttzP]*[V" inline="true">
+                            <field name="Colour">TFT_GREEN</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="tft_write" id="`,@7ty{mm@9FqE[$qTyb" inline="true">
+                            <value name="TEXT">
+                              <shadow type="text" id="J0M-bxLetLm.(0_IgJjC">
+                                <field name="TEXT">Stopwatch</field>
+                              </shadow>
+                            </value>
+                            <value name="textSize">
+                              <shadow type="math_number" id="p59zmRS)A+HJ0|7icohJ">
+                                <field name="NUM">2</field>
+                              </shadow>
+                            </value>
+                            <value name="ValX">
+                              <shadow type="math_number" id="owHg=tyqvn*TNY#yWlS.">
+                                <field name="NUM">70</field>
+                              </shadow>
+                            </value>
+                            <value name="ValY">
+                              <shadow type="math_number" id="Ry@5aji=)RE6N5YuS#EA">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="Colour">
+                              <block type="Colour" id="$k=,+DZBV^?aT;9%vV*(" inline="true">
+                                <field name="Colour">TFT_BLACK</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="displayStopwatchTime" id="uO|iSgb=+1@B$AK(+GR6" inline="true"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="base_loop" id="#W%`Fm}[2.vZ;|ijmR@A" inline="true" x="88" y="588">
+    <statement name="LOOP">
+      <block type="readTouch" id="{F[,~DYqHjtagII4S{s{" inline="true">
+        <next>
+          <block type="tft_write" id="T{p7,q:2!jO_7^ZZac2^" inline="true">
+            <value name="TEXT">
+              <shadow type="text" id="B{sA{)}1t1x3;_qSLgCB">
+                <field name="TEXT">Press anywhare to stop</field>
+              </shadow>
+            </value>
+            <value name="textSize">
+              <shadow type="math_number" id="m*R%$qic[tN1dKZVrFg~">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="ValX">
+              <shadow type="math_number" id=")T+7]qU/Nx6vBvapyfgA">
+                <field name="NUM">50</field>
+              </shadow>
+            </value>
+            <value name="ValY">
+              <shadow type="math_number" id="{KHaqUlni`j{R^Cyfk1]">
+                <field name="NUM">270</field>
+              </shadow>
+            </value>
+            <value name="Colour">
+              <block type="Colour" id="r#N2vU~X^Ao`):s[I@4:" inline="true">
+                <field name="Colour">TFT_BLACK</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="aOr=u-ivjA,}Gd`Wp@U+" inline="true">
+                <value name="IF0">
+                  <block type="touch_area" id=".i]?y0p{T60RaMo-,MPb" inline="true">
+                    <value name="X">
+                      <shadow type="math_number" id="wv.lO}-Ek(0B@6h,HhJz">
+                        <field name="NUM">125</field>
+                      </shadow>
+                    </value>
+                    <value name="X1">
+                      <shadow type="math_number" id="Y~dnL.~pRX6ND{|Qcjol">
+                        <field name="NUM">220</field>
+                      </shadow>
+                    </value>
+                    <value name="Y">
+                      <shadow type="math_number" id="z?4V#kWITr0?LD32s2`3">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                    <value name="Y1">
+                      <shadow type="math_number" id="(Dku)raM+/MtvKH6d1/u">
+                        <field name="NUM">140</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_if" id="hhQsS;pa|t05Hjp^XDDF" inline="true">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="isStopwatchRunning" id="|xJCGXpT^_nDM0e7nwFu" inline="true"></block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="stopStopwatch" id="d`PEc=Fd@ovqt5oggdM#" inline="true"></block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="startStopwatch" id="K2ekPj;I%Pd7{EAeh$m-" inline="true">
+                        <next>
+                          <block type="variables_set" id=")tDpq_BSuCe*3~FqgBVV" inline="true">
+                            <field name="VAR">updateScreen</field>
+                            <value name="VALUE">
+                              <block type="logic_boolean" id="3`bK{*~[58;05iwvJ`^%" inline="true">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="Y:EI~mj;9,tki@KI=Oht" inline="true">
+                    <value name="IF0">
+                      <block type="touch_area" id="p06$KNFGP~.T@xUDzb|$" inline="true">
+                        <value name="X">
+                          <shadow type="math_number" id="l3PBjoMGrSjJcxp:ev1L">
+                            <field name="NUM">21</field>
+                          </shadow>
+                        </value>
+                        <value name="X1">
+                          <shadow type="math_number" id="I1WQDKl)+~I@.Uy)A_dA">
+                            <field name="NUM">139</field>
+                          </shadow>
+                        </value>
+                        <value name="Y">
+                          <shadow type="math_number" id="P$lteB3ND~zp*:3N#NQ9">
+                            <field name="NUM">96</field>
+                          </shadow>
+                        </value>
+                        <value name="Y1">
+                          <shadow type="math_number" id="$-!t}efVD).VdUq+HP9Y">
+                            <field name="NUM">135</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="resetStopwatch" id="$k8PKi[8,DacdPi$q_h+" inline="true">
+                        <next>
+                          <block type="variables_set" id="KJzF/jo,]]+FSqXb]Lrz" inline="true">
+                            <field name="VAR">updateScreen</field>
+                            <value name="VALUE">
+                              <block type="logic_boolean" id="nj={wr_kFFSB-uY5@/jL" inline="true">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="displayStopwatchTime" id=")J2dhtBe2ISM%*djJC+k" inline="true"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id=".~LYyQc?$a:q0+;];E=G" inline="true">
+                        <value name="IF0">
+                          <block type="logic_operation" id="a(,8k/b7r%BGX[3{6={~">
+                            <field name="OP">AND</field>
+                            <value name="A">
+                              <block type="logic_compare" id="PO4rqw2Kv(.RiMj~z^H(">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                  <block type="variables_get" id="zif[ahIaDr(jV5fPbfrH" inline="true">
+                                    <field name="VAR">touched</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="^5VFd@2Q1R8.]y$+z$Ck" inline="true">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="logic_operation" id="E(~=m$eXwcjh|L#,t#a:">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="logic_negate" id="nf(kmOrlN|M+krelVPZC" inline="true">
+                                    <value name="BOOL">
+                                      <block type="touch_area" id="IO/*x?kbQU*qu{OaNJV+" inline="true">
+                                        <value name="X">
+                                          <shadow type="math_number" id="J_~UL:EM+g?%jJsrZFw*">
+                                            <field name="NUM">21</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="X1">
+                                          <shadow type="math_number" id="mAMRq|GZ01{lnscim4~$">
+                                            <field name="NUM">139</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="Y">
+                                          <shadow type="math_number" id="!]kLURW9)ur;EC~rAk:,">
+                                            <field name="NUM">96</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="Y1">
+                                          <shadow type="math_number" id=")JHw=e#xL`X3LXBvUMJm">
+                                            <field name="NUM">125</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_negate" id="fdOD-Zzm`Mq_o/;`0I-*" inline="true">
+                                    <value name="BOOL">
+                                      <block type="touch_area" id="LKngrb4bQ4N_=b)CWL,c" inline="true">
+                                        <value name="X">
+                                          <shadow type="math_number" id="11va@A]QK1wrc!F$Oijw">
+                                            <field name="NUM">125</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="X1">
+                                          <shadow type="math_number" id="zhu[-Jy3y5%oNEd?E{)u">
+                                            <field name="NUM">220</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="Y">
+                                          <shadow type="math_number" id="!25l]:JHAN!4^R:@bS^1">
+                                            <field name="NUM">100</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="Y1">
+                                          <shadow type="math_number" id="7ujN@_=C6k[BQ^~zu%F_">
+                                            <field name="NUM">140</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="controls_if" id="AJ8FY)wG?@?HWxuI}:y$" inline="true">
+                            <value name="IF0">
+                              <block type="isStopwatchRunning" id="sZ/GeZ|!Var!{h:}[vp{" inline="true"></block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="stopStopwatch" id="0;r;#z2zKQTre2eO*}pf" inline="true">
+                                <next>
+                                  <block type="variables_set" id="T.8~.NL17,%5PSR=^VU?" inline="true">
+                                    <field name="VAR">updateScreen</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="6v*PQn`SglGz#z^A]+1J" inline="true">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="displayStopwatchTime" id=")K7@@rOoB`hY4XBB6%@|" inline="true"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id=",$m!B$E,U(:W:{Ow9)~c" inline="true">
+                            <value name="IF0">
+                              <block type="logic_operation" id="]0|A5vMW^o#ifiXY?tL:">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="variables_get" id="eXNyD1b-eKb|(?a)oAr:" inline="true">
+                                    <field name="VAR">updateScreen</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="isStopwatchRunning" id="EhT=ioz0^SFx{@C?^Y/[" inline="true"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="updateStopwatch" id="P?ZZ?jakvJ0r3(`3g_5I" inline="true"></block>
+                            </statement>
+                            <next>
+                              <block type="delay_init" id="w4~9-K3!jKX:^X+IiRSX" inline="true">
+                                <value name="X">
+                                  <shadow type="math_number" id="qEC#3v/dS+~*@|$ma8nO">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

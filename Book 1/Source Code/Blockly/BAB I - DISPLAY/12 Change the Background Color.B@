@@ -1,0 +1,45 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_QOREXWIFI,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup_loop" id="/XNk{ywHKgH[)X=i[o-/" x="63" y="188">
+    <statement name="DO">
+      <block type="tft" id="kW0~*mp+{Yf.2qAS^oQ`" inline="false">
+        <field name="Rotation">3</field>
+        <value name="Colour">
+          <block type="Colour" id="W;UK/dZ-wDGFU[Aa,1Vt" inline="false">
+            <field name="Colour">TFT_BLACK</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="LOOP">
+      <block type="tft_write" id="1vI@C!$|.dGW.K|B-~Rz">
+        <value name="TEXT">
+          <shadow type="text" id=")LI~lp*N_$.@.PX|F#~i">
+            <field name="TEXT">Hello Qore-X</field>
+          </shadow>
+        </value>
+        <value name="textSize">
+          <shadow type="math_number" id="MCaTdUYmH6Ost/s#W964">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+        <value name="ValX">
+          <shadow type="math_number" id="3EB$B4__G0$4hPhyi0_h">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="ValY">
+          <shadow type="math_number" id="1!aDau4-Ow8n9.IL.#}J">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="Colour">
+          <block type="Colour" id="W@Nb^jDCehV_.s:%E0(i" inline="false">
+            <field name="Colour">TFT_WHITE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

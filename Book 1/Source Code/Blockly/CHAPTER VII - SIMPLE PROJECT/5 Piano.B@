@@ -1,0 +1,815 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup" id="C4zVbd,p8Kuz?HK@nSDU" inline="true" x="-238" y="-38">
+    <statement name="DO">
+      <block type="tft" id="hlygLQs]Gt@_V1Xfj/^2" inline="true">
+        <field name="Rotation">3</field>
+        <value name="Colour">
+          <block type="Colour" id="[X*],KlQ,j.{z4+P(iZ8" inline="true">
+            <field name="Colour">TFT_WHITE</field>
+          </block>
+        </value>
+        <next>
+          <block type="touch_init" id="]1A/]WtN2EoFxiQ;PO5g" inline="true">
+            <next>
+              <block type="speaker" id="?/o%S@I{=_[TuB1AKhnN">
+                <next>
+                  <block type="tft_rect" id="*jmo(IKeSgvHF_sMIb?I" inline="true">
+                    <field name="FILL">FILL</field>
+                    <field name="Angle">0</field>
+                    <value name="X">
+                      <shadow type="math_number" id="tg,B/R)pP[}W*{j:(kGA">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                    <value name="Y">
+                      <shadow type="math_number" id="X,*Kmck*fvJTdZSXnvkp">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                    <value name="W">
+                      <shadow type="math_number" id="-Tll%i.lzs#@IVszOb~0">
+                        <field name="NUM">80</field>
+                      </shadow>
+                    </value>
+                    <value name="H">
+                      <shadow type="math_number" id="zO]-{]-iwn-iTHG|.Kxm">
+                        <field name="NUM">120</field>
+                      </shadow>
+                    </value>
+                    <value name="Colour">
+                      <block type="Colour" id="5HqV+QMG?On7YDzI,vs)" inline="true">
+                        <field name="Colour">TFT_WHITE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="tft_rect" id="HvvDgmh9.nON6NQRArk`" inline="true">
+                        <field name="FILL">FILL</field>
+                        <field name="Angle">0</field>
+                        <value name="X">
+                          <shadow type="math_number" id="A+mMQ87ZI,/hv%e2v8x^">
+                            <field name="NUM">80</field>
+                          </shadow>
+                        </value>
+                        <value name="Y">
+                          <shadow type="math_number" id="UsqIsI,Z3DW6,x8.,}L`">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="W">
+                          <shadow type="math_number" id="_?@SmLce}ktKbLeKEZgp">
+                            <field name="NUM">80</field>
+                          </shadow>
+                        </value>
+                        <value name="H">
+                          <shadow type="math_number" id=";[7WLtSz)=NWy4p@PJ2o">
+                            <field name="NUM">120</field>
+                          </shadow>
+                        </value>
+                        <value name="Colour">
+                          <block type="Colour" id="0MYzz}_?1]+:aZk2tkQY" inline="true">
+                            <field name="Colour">TFT_RED</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="tft_rect" id="4hx1!lE3rm4ke(n66~Hp" inline="true">
+                            <field name="FILL">FILL</field>
+                            <field name="Angle">0</field>
+                            <value name="X">
+                              <shadow type="math_number" id="9y,ODBBQk[O}cHA`E?mm">
+                                <field name="NUM">160</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="egx=yPD%JZuDQ(t3Se[7">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="W">
+                              <shadow type="math_number" id="[?XE74kBYjO^P|p?5]|g">
+                                <field name="NUM">80</field>
+                              </shadow>
+                            </value>
+                            <value name="H">
+                              <shadow type="math_number" id="3Ulr[,kF0?276aCkKqY]">
+                                <field name="NUM">120</field>
+                              </shadow>
+                            </value>
+                            <value name="Colour">
+                              <block type="Colour" id="9RN$Jsk:=Th3d?|Ayz#O" inline="true">
+                                <field name="Colour">TFT_BLUE</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="tft_rect" id="/J8!g6H]*U)1c0ax`i7=" inline="true">
+                                <field name="FILL">FILL</field>
+                                <field name="Angle">0</field>
+                                <value name="X">
+                                  <shadow type="math_number" id="|{?XYDs)~J)PyYGbJt7J">
+                                    <field name="NUM">240</field>
+                                  </shadow>
+                                </value>
+                                <value name="Y">
+                                  <shadow type="math_number" id="H}HS|3@=2VV[|%t?FaS`">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                                <value name="W">
+                                  <shadow type="math_number" id="6T8dUN9^-n;76`WtTX!#">
+                                    <field name="NUM">80</field>
+                                  </shadow>
+                                </value>
+                                <value name="H">
+                                  <shadow type="math_number" id="4mNvx;L~{+!Sp}neo?-p">
+                                    <field name="NUM">120</field>
+                                  </shadow>
+                                </value>
+                                <value name="Colour">
+                                  <block type="Colour" id="lrj9yXh+@#?,6XjiH][r" inline="true">
+                                    <field name="Colour">TFT_PINK</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="tft_rect" id="Bn4w)M9AYEcbe.p;dT+A" inline="true">
+                                    <field name="FILL">FILL</field>
+                                    <field name="Angle">0</field>
+                                    <value name="X">
+                                      <shadow type="math_number" id="hg$1Wb:X,kz(Fh079c,I">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="Y">
+                                      <shadow type="math_number" id="#q[DknTO%Cr0I1HU~cW1">
+                                        <field name="NUM">120</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="W">
+                                      <shadow type="math_number" id=")ife~}|8^o0j{o.SChBD">
+                                        <field name="NUM">80</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="H">
+                                      <shadow type="math_number" id="eCLVuzsmR;nT}pk5^`B[">
+                                        <field name="NUM">120</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="Colour">
+                                      <block type="Colour" id="Ssy99.a^ct6Q_?Mbf0TK" inline="true">
+                                        <field name="Colour">TFT_GREEN</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="tft_rect" id="iI+VsfpHUR;dE9vQNZ11" inline="true">
+                                        <field name="FILL">FILL</field>
+                                        <field name="Angle">0</field>
+                                        <value name="X">
+                                          <shadow type="math_number" id="{iv^LXi*$EBos#ds4%Y?">
+                                            <field name="NUM">80</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="Y">
+                                          <shadow type="math_number" id="!W.00WD7;?X1b_u,iCP~">
+                                            <field name="NUM">120</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="W">
+                                          <shadow type="math_number" id="0;Ps-DlwIJqX.v,!^~k]">
+                                            <field name="NUM">80</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="H">
+                                          <shadow type="math_number" id="UaV*VxJ[Or-D:JIYg5^3">
+                                            <field name="NUM">120</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="Colour">
+                                          <block type="Colour" id="Z7srp.cphegA[~=HKykl" inline="true">
+                                            <field name="Colour">TFT_YELLOW</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="tft_rect" id="P/Mc@E#O/0/I6{;N/e*%" inline="true">
+                                            <field name="FILL">FILL</field>
+                                            <field name="Angle">0</field>
+                                            <value name="X">
+                                              <shadow type="math_number" id="J}AQ=S(OUcSai|9JU^`,">
+                                                <field name="NUM">160</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="Y">
+                                              <shadow type="math_number" id="p=:c4}68*_5_tHg$b-Ex">
+                                                <field name="NUM">120</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="W">
+                                              <shadow type="math_number" id="CqeAjK;W{sgW.$L#4Sx]">
+                                                <field name="NUM">80</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="H">
+                                              <shadow type="math_number" id="K:aDH,uzQ#EK9a[4I)Z(">
+                                                <field name="NUM">120</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="Colour">
+                                              <block type="Colour" id="BeXPebWQ[pk7U)C?K=!h" inline="true">
+                                                <field name="Colour">TFT_PURPLE</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="tft_rect" id="Zk0jvoO6a4oqJWRMF=8u" inline="true">
+                                                <field name="FILL">FILL</field>
+                                                <field name="Angle">0</field>
+                                                <value name="X">
+                                                  <shadow type="math_number" id="KvuSZB:0w/`OHRSvVb44">
+                                                    <field name="NUM">240</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="Y">
+                                                  <shadow type="math_number" id="-*u~.jUR,f}S%9!U}9Bu">
+                                                    <field name="NUM">120</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="W">
+                                                  <shadow type="math_number" id="|+AD27oz#.-w?F{m%YMK">
+                                                    <field name="NUM">80</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="H">
+                                                  <shadow type="math_number" id="}c$+m.n0X;oR/4NMW{HA">
+                                                    <field name="NUM">120</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="Colour">
+                                                  <block type="Colour" id="AIIc7O!g1tke!ib[3pv}" inline="true">
+                                                    <field name="Colour">TFT_CYAN</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="tft_write" id="H~phYpmhy/[!?FVjx|R/" inline="true">
+                                                    <value name="TEXT">
+                                                      <shadow type="text" id="OEYar5`iBrl|cIkLs=m?">
+                                                        <field name="TEXT">DO'</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="textSize">
+                                                      <shadow type="math_number" id="9}sx0hWxAFwpt+6in$!!">
+                                                        <field name="NUM">2</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="ValX">
+                                                      <shadow type="math_number" id="dGR(qf.y?gSl{6Rp=~)n">
+                                                        <field name="NUM">20</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="ValY">
+                                                      <shadow type="math_number" id="3,6vA=@zxCNE[gS~Jj,3">
+                                                        <field name="NUM">10</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <value name="Colour">
+                                                      <block type="Colour" id="bP_,sbb1ZCiGMOMJs,B|" inline="true">
+                                                        <field name="Colour">TFT_ORANGE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="tft_write" id="/:f[f_KALm9/WurG`}9l" inline="true">
+                                                        <value name="TEXT">
+                                                          <shadow type="text" id="-D.gCKdpZVdl6*NRPvf+">
+                                                            <field name="TEXT">SI</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="textSize">
+                                                          <shadow type="math_number" id="N~lkB](/i%EiC7gHHUm3">
+                                                            <field name="NUM">2</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="ValX">
+                                                          <shadow type="math_number" id="Wr42O_Q4)8X,lJ:|T=(}">
+                                                            <field name="NUM">110</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="ValY">
+                                                          <shadow type="math_number" id="X]jRg*zCRy=@@=1+91Iq">
+                                                            <field name="NUM">10</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="Colour">
+                                                          <block type="Colour" id="zE=db.1aQ;P0eBc/-i^_" inline="true">
+                                                            <field name="Colour">TFT_MAGENTA</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="tft_write" id="t,tr+2%jPvNN48umv,xN" inline="true">
+                                                            <value name="TEXT">
+                                                              <shadow type="text" id="g68_Pk=u)_a2UIQo)=pc">
+                                                                <field name="TEXT">LA</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <value name="textSize">
+                                                              <shadow type="math_number" id="YxtR#rvG;M}Vy-_t%;GL">
+                                                                <field name="NUM">2</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <value name="ValX">
+                                                              <shadow type="math_number" id="o6T{:YB$]-uT5^R=2~eJ">
+                                                                <field name="NUM">180</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <value name="ValY">
+                                                              <shadow type="math_number" id="jIapTzy8DS$@=}W|Bap=">
+                                                                <field name="NUM">10</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <value name="Colour">
+                                                              <block type="Colour" id="iyardFVzOxtVsBoy0|Y_" inline="true">
+                                                                <field name="Colour">TFT_VIOLET</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="tft_write" id="B}OXy}Br*`8N!|!d^L{n" inline="true">
+                                                                <value name="TEXT">
+                                                                  <shadow type="text" id="I5AS?vKzw}sbcx:EK3KO">
+                                                                    <field name="TEXT">SOL</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="textSize">
+                                                                  <shadow type="math_number" id="/{VjqUv-!ht4F/{.qlg7">
+                                                                    <field name="NUM">2</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="ValX">
+                                                                  <shadow type="math_number" id="H*bu;Vr8,zZ*,!!)4b2~">
+                                                                    <field name="NUM">270</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="ValY">
+                                                                  <shadow type="math_number" id="xX.UIJ*oK3veS}?)i|0g">
+                                                                    <field name="NUM">10</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="Colour">
+                                                                  <block type="Colour" id="(C@N:hZ95ZW)tr{ooTS!" inline="true">
+                                                                    <field name="Colour">TFT_DARKGREY</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="tft_write" id="1v^zVNmpth6#drl$]nYB" inline="true">
+                                                                    <value name="TEXT">
+                                                                      <shadow type="text" id="v;]n}]d,B::iZ{F}k{iv">
+                                                                        <field name="TEXT">FA</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <value name="textSize">
+                                                                      <shadow type="math_number" id="Rh^?PN=@{|ev9xScw}8)">
+                                                                        <field name="NUM">2</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <value name="ValX">
+                                                                      <shadow type="math_number" id="rRpPY!z`U!`s+Z{i`~le">
+                                                                        <field name="NUM">20</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <value name="ValY">
+                                                                      <shadow type="math_number" id="qFds:u{6e4`k)LLKucmz">
+                                                                        <field name="NUM">220</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <value name="Colour">
+                                                                      <block type="Colour" id="+5*78YH%!00dzi8(9xTS" inline="true">
+                                                                        <field name="Colour">TFT_OLIVE</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="tft_write" id="{ljO|=GaJZa}yD?1Z2%U" inline="true">
+                                                                        <value name="TEXT">
+                                                                          <shadow type="text" id="dWf8j5g6YO]%pvAM4u,W">
+                                                                            <field name="TEXT">MI</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="textSize">
+                                                                          <shadow type="math_number" id="+[,{I;cN=Y+!9~Y_M9l,">
+                                                                            <field name="NUM">2</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="ValX">
+                                                                          <shadow type="math_number" id="o9^^AP%Gc.D`MD%-!X%d">
+                                                                            <field name="NUM">110</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="ValY">
+                                                                          <shadow type="math_number" id="3XjRWAl#RSfv|OCh#^Y*">
+                                                                            <field name="NUM">220</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="Colour">
+                                                                          <block type="Colour" id="/w,2,BP@a9]GohLOBjEp" inline="true">
+                                                                            <field name="Colour">TFT_MAROON</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="tft_write" id="dhN+tVgjz_zU`~Q)@%H8" inline="true">
+                                                                            <value name="TEXT">
+                                                                              <shadow type="text" id="q|G!LQ)no]5jL0sgwF]g">
+                                                                                <field name="TEXT">RE</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                            <value name="textSize">
+                                                                              <shadow type="math_number" id="8^2fBXZ8aJ#.sx}E_~Gx">
+                                                                                <field name="NUM">2</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                            <value name="ValX">
+                                                                              <shadow type="math_number" id="/e)Ee0(mqF/2Dd{ltSP(">
+                                                                                <field name="NUM">180</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                            <value name="ValY">
+                                                                              <shadow type="math_number" id="I%;/!Hu-|CWd8)i?zq*f">
+                                                                                <field name="NUM">220</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                            <value name="Colour">
+                                                                              <block type="Colour" id=")^HXZ(fk4sY3j!=~KSf6" inline="true">
+                                                                                <field name="Colour">TFT_SKYBLUE</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="tft_write" id=")|ZV@|rK0%_0K|qG2I`J" inline="true">
+                                                                                <value name="TEXT">
+                                                                                  <shadow type="text" id="s1*!I)Fw(;Ym6d5x1b`W">
+                                                                                    <field name="TEXT">DO</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                                <value name="textSize">
+                                                                                  <shadow type="math_number" id="}JT(-jisa+5[?A}|cpg#">
+                                                                                    <field name="NUM">2</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                                <value name="ValX">
+                                                                                  <shadow type="math_number" id="yeL}iD:FI:p5P%L$kvop">
+                                                                                    <field name="NUM">270</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                                <value name="ValY">
+                                                                                  <shadow type="math_number" id="3`CUfzX(vSi8z;F]d`JR">
+                                                                                    <field name="NUM">220</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                                <value name="Colour">
+                                                                                  <block type="Colour" id="v%xzR-:/vrE?kU$X/2xd" inline="true">
+                                                                                    <field name="Colour">TFT_GOLD</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="base_loop" id="H0Z]j,sS$y;jR,UzJjlK" inline="true" x="-238" y="788">
+    <statement name="LOOP">
+      <block type="readTouch" id="lROzeL%D?~.XgocYZ3Rd" inline="true">
+        <next>
+          <block type="speaker" id="g|K/mB^p}3a|Z@E8G;H4">
+            <next>
+              <block type="controls_if" id=":Y{-l[J65U5c7I0eVu%." inline="true">
+                <value name="IF0">
+                  <block type="O_customCode" id="()OJP*e2-6xF~-n%2;Jl" inline="true">
+                    <field name="Code">touched</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="start" id="uGl(g[|-HNae]lV-R_%m" inline="true">
+                    <next>
+                      <block type="controls_if" id=";x)/gi_OGtyNJMZNpqWd" inline="true">
+                        <mutation elseif="7" else="1"></mutation>
+                        <value name="IF0">
+                          <block type="touch_area" id="IXX_3/nSdH#2+nymddHJ" inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id="vX~_P.|`m3rsXg@i7UQT">
+                                <field name="NUM">125</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id="$xt(^hux(2)c9;2*Pc$f">
+                                <field name="NUM">240</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="ecRgQP@+9E5%U4;ADv#d">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id="g;PyIi74X}c}~dD9*(P%">
+                                <field name="NUM">75</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="playTone" id="*6!~,}ifw3[h%sb(:s*S">
+                            <field name="not">High</field>
+                            <field name="note">0</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="GqhF(+Hof/{;s$y5%07P">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <value name="IF1">
+                          <block type="touch_area" id="hLOy`mEVG-zpLvmEk_T(" inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id="J=KyL*k@9sxL=An5RssC">
+                                <field name="NUM">125</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id="cI[hl5[DEo;R{cp/O+*r">
+                                <field name="NUM">240</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="_Hyaz/|^c#Xxh!N{@=b{">
+                                <field name="NUM">85</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id="_ZDZx7D,ufnGWI?oGmpU">
+                                <field name="NUM">155</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO1">
+                          <block type="playTone" id="~-`FT0{[YvpwEH)EkgqX">
+                            <field name="not">High</field>
+                            <field name="note">1</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="_uscn?Ju5UKx[9Ivr{.p">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <value name="IF2">
+                          <block type="touch_area" id="5Ai[D_oTQgqG5vSLZ5P." inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id=",1(|NmpvK}kUzJLHsdas">
+                                <field name="NUM">125</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id="6%.#@mIif(~+AWA]|AmV">
+                                <field name="NUM">240</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="Um`,3NRKj.u~G=?w*C;_">
+                                <field name="NUM">165</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id="h3ZdkA-/I[]7m*`txEBe">
+                                <field name="NUM">235</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO2">
+                          <block type="playTone" id="vM8u_K@v56k@r0K7Tmt~">
+                            <field name="not">High</field>
+                            <field name="note">2</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="2hX)@Ok;~XF{}%.;4vul">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <value name="IF3">
+                          <block type="touch_area" id="@(wT!bW4u6GM?`~x.!Ge" inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id="sCzSalm+R~!fRrPkCY/f">
+                                <field name="NUM">125</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id="C^8UQLlMKah-sv:$T|I)">
+                                <field name="NUM">240</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="ue7zWQyPLk#cIw(@1}^o">
+                                <field name="NUM">245</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id="ShZ*IglAQ(I8``DxL~!r">
+                                <field name="NUM">320</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO3">
+                          <block type="playTone" id="AI7)7X[Zd1::iVPViAN}">
+                            <field name="not">High</field>
+                            <field name="note">3</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="7U#hr^3I8hK(@k58`UnB">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <value name="IF4">
+                          <block type="touch_area" id="Bi,wVw?q[nxAowls5!9-" inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id="!F}z(%fgXbrsMM[a:*E=">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id="J!e$Hg|4F.Yh=67^Znu(">
+                                <field name="NUM">115</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="-XrZKIgpD5H,(oc%d+8$">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id=",RAi!IBc;L:1])G2A~_1">
+                                <field name="NUM">75</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO4">
+                          <block type="playTone" id="Jm`[Z3an{`+w0xK.T~ub">
+                            <field name="not">High</field>
+                            <field name="note">4</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="[wEB?BT_z]tYWiuonL|5">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <value name="IF5">
+                          <block type="touch_area" id="npEGh]A8Lr8;:q5XjJrc" inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id="S}]/:H4xYa*FS}fdEpX9">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id="^lYZ6so,|V4KoTy[OKh9">
+                                <field name="NUM">115</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="`]ZR1;d6CUY+G.Y@m_o`">
+                                <field name="NUM">85</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id="?:HIru^Y7SQDG8zq7a)T">
+                                <field name="NUM">155</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO5">
+                          <block type="playTone" id="aGv|qmN+fL*|u29LrD2p">
+                            <field name="not">High</field>
+                            <field name="note">5</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="vpq?#G|SV6OS.PZ{mni@">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <value name="IF6">
+                          <block type="touch_area" id="@B7~Qc!jnoM7_=MC$dGc" inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id="cV[U$^AAcLw_a*;K.9:x">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id=",=o:UCWgYCgA@j~_^Ra9">
+                                <field name="NUM">115</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id="w*Rr[A^06V#3gt%:33%F">
+                                <field name="NUM">165</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id="F7r=-L7n6wvF9=c~RJk}">
+                                <field name="NUM">235</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO6">
+                          <block type="playTone" id="/e*IG[%=P=:*7e?ZRkJG">
+                            <field name="not">High</field>
+                            <field name="note">6</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="1%JrcGI{{+mILL|KF#M]">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <value name="IF7">
+                          <block type="touch_area" id="@!:d!9V)9WN$YO(H;NC7" inline="true">
+                            <value name="X">
+                              <shadow type="math_number" id="{]~QSue/6#)_WE{1humK">
+                                <field name="NUM">0</field>
+                              </shadow>
+                            </value>
+                            <value name="X1">
+                              <shadow type="math_number" id="sg_{F*I#5u6BxjP}:19.">
+                                <field name="NUM">115</field>
+                              </shadow>
+                            </value>
+                            <value name="Y">
+                              <shadow type="math_number" id=",}rDO-=WT!8vCL4ojXge">
+                                <field name="NUM">245</field>
+                              </shadow>
+                            </value>
+                            <value name="Y1">
+                              <shadow type="math_number" id="=-b+hyc(brX3(!x~Y5~m">
+                                <field name="NUM">320</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO7">
+                          <block type="playTone" id="MkG;@uID9cUQ-5IK:q1f">
+                            <field name="not">High</field>
+                            <field name="note">7</field>
+                            <value name="duration">
+                              <shadow type="math_number" id="]Zq/erG/GI.BZT[TR.EK">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="stop" id="EDc-#vckTYHcSQtaW]:p"></block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
