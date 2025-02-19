@@ -1,0 +1,251 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup" id="[k9V:);sq.86??gT..c7" x="-12" y="87">
+    <statement name="DO">
+      <block type="touch_init" id="vAv:zVryoNMQ.BH{Bt9o">
+        <next>
+          <block type="tft" id="3S%23wVL2ekNt!1fXb?/">
+            <field name="Rotation">3</field>
+            <value name="Colour">
+              <block type="Colour" id="rnP,izxF6em$`_CmD6%/">
+                <field name="Colour">TFT_CYAN</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set_init" id=":NHXFk7#0XCH]!Y4zus=">
+                <field name="VAR">isClearButtonPressed</field>
+                <field name="VARIABLE_SETTYPE_TYPE">BOOLEAN</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="}m{ZI6~$6}89K~uJdO!d">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="Button" id="pF}0YblV]vZAvlzv]X;k">
+                    <field name="button">Digital Drawing</field>
+                    <value name="ValX">
+                      <shadow type="math_number" id="9WGsX/R0w_BHe1*;:Y|f">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                    <value name="ValY">
+                      <shadow type="math_number" id="KCN:J2NAQA_Mk5so@k=v">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                    <value name="textSize">
+                      <shadow type="math_number" id="tF8.jUcfD;8/cs=E9]e@">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                    <value name="Colour">
+                      <block type="Colour" id="kaZL=8mzLU5O8-AGo=Fm">
+                        <field name="Colour">TFT_WHITE</field>
+                      </block>
+                    </value>
+                    <value name="Colour1">
+                      <block type="Colour" id="kOK`LU`|6n.xI!v7[/M^">
+                        <field name="Colour">TFT_BLACK</field>
+                      </block>
+                    </value>
+                    <value name="Colour2">
+                      <block type="Colour" id="?TE%,C{!V-43sQZ%uDZ7">
+                        <field name="Colour">TFT_WHITE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="Button" id="Pzp#_S`6tlqCiYt~4W*L">
+                        <field name="button">Clear</field>
+                        <value name="ValX">
+                          <shadow type="math_number" id="-#|?32cfQH}[pTCU?:H~">
+                            <field name="NUM">250</field>
+                          </shadow>
+                        </value>
+                        <value name="ValY">
+                          <shadow type="math_number" id="KI*OToPG.GwUUJ+o)/t-">
+                            <field name="NUM">200</field>
+                          </shadow>
+                        </value>
+                        <value name="textSize">
+                          <shadow type="math_number" id="]xlA9L8rTFLr,vs+QoV[">
+                            <field name="NUM">2</field>
+                          </shadow>
+                        </value>
+                        <value name="Colour">
+                          <block type="Colour" id="b1wQ}Z/_suyy*/$zR:u]">
+                            <field name="Colour">TFT_WHITE</field>
+                          </block>
+                        </value>
+                        <value name="Colour1">
+                          <block type="Colour" id="PI`F+I(fj_o*A@!A8V(M">
+                            <field name="Colour">TFT_BLACK</field>
+                          </block>
+                        </value>
+                        <value name="Colour2">
+                          <block type="Colour" id="Wr;9Km.^eU=yKu,iY@qH">
+                            <field name="Colour">TFT_WHITE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="base_loop" id="(J4*t(Pu_|uM0#FH|^l3" x="512" y="87">
+    <statement name="LOOP">
+      <block type="readTouch" id="b3|rLZ|[iPsYsN]K@z5;">
+        <next>
+          <block type="controls_if" id="7H%Mig[]~$GkYUH_q)Vk">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="touch_area" id="aNl]+$jNW];LJ}J([@}[">
+                <value name="X">
+                  <shadow type="math_number" id="-AnL5UWSwp=wwA60VF_g">
+                    <field name="NUM">199</field>
+                  </shadow>
+                </value>
+                <value name="X1">
+                  <shadow type="math_number" id="]=+VqX,{cG!~7arRnsgf">
+                    <field name="NUM">239</field>
+                  </shadow>
+                </value>
+                <value name="Y">
+                  <shadow type="math_number" id="FQ^#C(qqR@TOMO~8O|y6">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="Y1">
+                  <shadow type="math_number" id="|XK)t%qDc(c8[8%=g:KP">
+                    <field name="NUM">64</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_if" id="@=iabIM*Ufgv(jwfng-D">
+                <value name="IF0">
+                  <block type="logic_negate" id="(%u@{nsEF4$qbRsnyv[y">
+                    <value name="BOOL">
+                      <block type="variables_get" id="O*osCm{T(wm_f1zr44-_">
+                        <field name="VAR">isClearButtonPressed</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="tft_fillScreen" id="E+*f-o,nZGBV_OeB5Am3">
+                    <value name="Colour">
+                      <block type="Colour" id="?C.PLq@]8?9hFtr^x$LL">
+                        <field name="Colour">TFT_LIGHTGREY</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="Button" id="b}4;7dl`ksLx4f%O|A%[">
+                        <field name="button">Digital Drawing</field>
+                        <value name="ValX">
+                          <shadow type="math_number" id="Hf@xxGW1kY!%qy_*717z">
+                            <field name="NUM">60</field>
+                          </shadow>
+                        </value>
+                        <value name="ValY">
+                          <shadow type="math_number" id="polVC)V4~{5bTKrdk`}{">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="textSize">
+                          <shadow type="math_number" id="0:^n9pR+r,DTaKPMc9S=">
+                            <field name="NUM">2</field>
+                          </shadow>
+                        </value>
+                        <value name="Colour">
+                          <block type="Colour" id="{Tjm7j}$n2t3%HZ=,iwu">
+                            <field name="Colour">TFT_WHITE</field>
+                          </block>
+                        </value>
+                        <value name="Colour1">
+                          <block type="Colour" id="i_rCmT[k``76/8[AEho)">
+                            <field name="Colour">TFT_BLACK</field>
+                          </block>
+                        </value>
+                        <value name="Colour2">
+                          <block type="Colour" id="NV*}yXzqFjc8|+ydJ].-">
+                            <field name="Colour">TFT_WHITE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="Button" id="`iyv@S@d@064Y8Vd[M2Q">
+                            <field name="button">Clear</field>
+                            <value name="ValX">
+                              <shadow type="math_number" id="O8N)n9^G!=pVH$/c`/n2">
+                                <field name="NUM">250</field>
+                              </shadow>
+                            </value>
+                            <value name="ValY">
+                              <shadow type="math_number" id="*bG]@8fQ,t.U9stRz}/*">
+                                <field name="NUM">200</field>
+                              </shadow>
+                            </value>
+                            <value name="textSize">
+                              <shadow type="math_number" id="o6D)3OXH/U#xaX[e3CXh">
+                                <field name="NUM">2</field>
+                              </shadow>
+                            </value>
+                            <value name="Colour">
+                              <block type="Colour" id="wrk35ASi.BmqDTeP4@#j">
+                                <field name="Colour">TFT_WHITE</field>
+                              </block>
+                            </value>
+                            <value name="Colour1">
+                              <block type="Colour" id="yB-v`KvCf.0b(gVZMo;Z">
+                                <field name="Colour">TFT_BLACK</field>
+                              </block>
+                            </value>
+                            <value name="Colour2">
+                              <block type="Colour" id="7|1SFt}m_Z4gdLA^_=Z`">
+                                <field name="Colour">TFT_WHITE</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="pKP=!GDW;Y{We*LdsJ6{">
+                                <field name="VAR">isClearButtonPressed</field>
+                                <value name="VALUE">
+                                  <block type="logic_boolean" id="/~]q}MKUsMFdZ[tgb}Dg">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="variables_set" id="!f`qvR,~C6aT/r/dI^4n">
+                <field name="VAR">isClearButtonPressed</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="[/.:NYX^lUp!aowUL:HL">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="draw_init" id="*dU|b+vv5yg4Po}(~psG"></block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

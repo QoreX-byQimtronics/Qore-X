@@ -1,0 +1,88 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup_loop" id="0xZfuMk3t#0h6)v*z!/l" x="37" y="112">
+    <statement name="DO">
+      <block type="initIMU" id="17O)XzSG]bex|DGw0yFr"></block>
+    </statement>
+    <statement name="LOOP">
+      <block type="updateIMU" id="5V@{@lKr(fSl+wSChR;#">
+        <next>
+          <block type="serial_print_var" id="RtY~;BkQ]MHY!ZH1ykfR">
+            <value name="Text">
+              <shadow type="text" id="z1qor=}3$%@-#cmAR/}p">
+                <field name="TEXT">Accel X = </field>
+              </shadow>
+            </value>
+            <value name="N">
+              <shadow type="math_number" id="U`?cq[X4,0cT4X1St.t:">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="IMU_accel" id="8`)3I8SKTKQ|%;{wqFX1">
+                <field name="X">X</field>
+              </block>
+            </value>
+            <value name="NEW_LINE">
+              <shadow type="logic_boolean" id="tWE})czC0D(b@r|@HLz{">
+                <field name="BOOL">TRUE</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="serial_print_var" id="ibwF!it.O-mz?FNgpf$:">
+                <value name="Text">
+                  <shadow type="text" id="N/@Xwu^EBXYiKsrpFv(]">
+                    <field name="TEXT">Accel Y = </field>
+                  </shadow>
+                </value>
+                <value name="N">
+                  <shadow type="math_number" id="U`?cq[X4,0cT4X1St.t:">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="IMU_accel" id="P,a9Xb;kxNIq@Y01H^d:">
+                    <field name="X">Y</field>
+                  </block>
+                </value>
+                <value name="NEW_LINE">
+                  <shadow type="logic_boolean" id="RNL`.]?Fy34Uk^8vIS=u">
+                    <field name="BOOL">TRUE</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="serial_print_var" id="gL(Wo:Df|-,1n_tJ`:_-">
+                    <value name="Text">
+                      <shadow type="text" id="ky=9}c71I.X~k`#q7y[3">
+                        <field name="TEXT">Accel Z = </field>
+                      </shadow>
+                    </value>
+                    <value name="N">
+                      <shadow type="math_number" id="U`?cq[X4,0cT4X1St.t:">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="IMU_accel" id="*Umr)IwbQp?N9Yk2yn2^">
+                        <field name="X">Z</field>
+                      </block>
+                    </value>
+                    <value name="NEW_LINE">
+                      <shadow type="logic_boolean" id="mc-,|NYIiH8X!,GeV)~6">
+                        <field name="BOOL">TRUE</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="delay_init" id="1r/J^x.q]D6NiyNKtHK0">
+                        <value name="X">
+                          <shadow type="math_number" id="P`f!OWip36S*I4-2{t+=">
+                            <field name="NUM">500</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

@@ -1,0 +1,162 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_QOREXWIFI,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup_loop" id="/XNk{ywHKgH[)X=i[o-/" x="63" y="188">
+    <statement name="DO">
+      <block type="touch_init" id="R^I=KX9,K#qZXevJtGg3">
+        <next>
+          <block type="tft" id="kW0~*mp+{Yf.2qAS^oQ`" inline="false">
+            <field name="Rotation">3</field>
+            <value name="Colour">
+              <block type="Colour" id="W;UK/dZ-wDGFU[Aa,1Vt" inline="false">
+                <field name="Colour">TFT_BLACK</field>
+              </block>
+            </value>
+            <next>
+              <block type="tft_write" id="TobWr$ktRHFOY4(}so(7">
+                <value name="TEXT">
+                  <shadow type="text" id="V`Httq]n{6o-Igm0RaW(">
+                    <field name="TEXT">Touch Test</field>
+                  </shadow>
+                </value>
+                <value name="textSize">
+                  <shadow type="math_number" id="0BTW{~FmjG8WAlS[4eMw">
+                    <field name="NUM">3</field>
+                  </shadow>
+                </value>
+                <value name="ValX">
+                  <shadow type="math_number" id="$l:Na1Gl7CVn1xr=$IP3">
+                    <field name="NUM">50</field>
+                  </shadow>
+                </value>
+                <value name="ValY">
+                  <shadow type="math_number" id=":A44E002t3YJ86|C66xa">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="Colour">
+                  <block type="Colour" id="+#]20!Vr|Fhq=o71|NY-" inline="false">
+                    <field name="Colour">TFT_WHITE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set_init" id="tJ:[,._3,btp-6)Wbe?s">
+                    <field name="VAR">count</field>
+                    <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="L4jO.QOO-Z-[G$^{-XH8">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="LOOP">
+      <block type="readTouch" id="3)fe|G5[*(,}ePo5D/2q">
+        <next>
+          <block type="controls_if" id=",k2JjsM#IZ_M(+d@8vqy">
+            <value name="IF0">
+              <block type="variables_get" id="GMOTjq__L]!.S+9HY~NS">
+                <field name="VAR">touched</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="tft_rect" id="B2=6v23zXaFGiLq!S.Ng">
+                <field name="FILL">FILL</field>
+                <field name="Angle">0</field>
+                <value name="X">
+                  <shadow type="math_number" id="I2N/4Cv.W*LFZ*MRim!u">
+                    <field name="NUM">90</field>
+                  </shadow>
+                </value>
+                <value name="Y">
+                  <shadow type="math_number" id="s$x{`$W63V+xOON.Dn5*">
+                    <field name="NUM">100</field>
+                  </shadow>
+                </value>
+                <value name="W">
+                  <shadow type="math_number" id="i}JHZ}RRIyv,fmDR*W/1">
+                    <field name="NUM">100</field>
+                  </shadow>
+                </value>
+                <value name="H">
+                  <shadow type="math_number" id="K=:;}!RgR+@U#`c(-m9c">
+                    <field name="NUM">100</field>
+                  </shadow>
+                </value>
+                <value name="Colour">
+                  <block type="Colour" id="h.j/PY]B#uL[bt@S27lg" inline="false">
+                    <field name="Colour">TFT_BLACK</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="D*zEsU??Qn*g^]3zkWXc">
+                    <field name="VAR">count</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="BRNsfhZ{D7MRf05E2h%F">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="2o2{K}-hHpv@qxKk8!de">
+                            <field name="VAR">count</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="MmsD-l;i7PGzapT{W]XS">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="tft_number" id="-C=`h=._x(Sj9}2TsF]f">
+                        <value name="sensor">
+                          <block type="variables_get" id="Vifq=DuLKdo+mgGzun5q">
+                            <field name="VAR">count</field>
+                          </block>
+                        </value>
+                        <value name="textSizesensor">
+                          <shadow type="math_number" id="!DPd8zt0DO*{r6r7uSFN">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                        <value name="ValXsensor">
+                          <shadow type="math_number" id="HQ`QGtIT;xU$eOU![#op">
+                            <field name="NUM">150</field>
+                          </shadow>
+                        </value>
+                        <value name="ValYsensor">
+                          <shadow type="math_number" id="{`Wg4=JRV+#THS:KoRn$">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                        <value name="Colour">
+                          <block type="Colour" id="SRb@WMTOBpYP`^4)kw=0" inline="false">
+                            <field name="Colour">TFT_DARKCYAN</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="delay_init" id=".Hs1FCA+m*`R,Wq={5VS">
+                            <value name="X">
+                              <shadow type="math_number" id="wbN*ZB?M+N}4{c=Vq3Jr">
+                                <field name="NUM">500</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
