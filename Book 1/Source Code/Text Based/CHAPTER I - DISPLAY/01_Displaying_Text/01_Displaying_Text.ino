@@ -2,6 +2,8 @@
 
 void setup() {
   initDisplay(3,TFT_BLACK);  // Initialize the TFT display with rotation 3 and black background
+  analogWrite(13,0);
+  analogWrite(13,255);
 }
 
 void loop() {
