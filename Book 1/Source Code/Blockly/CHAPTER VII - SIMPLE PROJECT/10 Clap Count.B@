@@ -1,0 +1,148 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup_loop" id="gR.Z/}=B,m@.+0{0jfr}" x="13" y="238">
+    <statement name="DO">
+      <block type="tft" id="S8ET:Zp/O|!z=ZT@/#cF">
+        <field name="Rotation">3</field>
+        <value name="Colour">
+          <block type="Colour" id="eAjg!B9`cSRNWYMm|*V#">
+            <field name="Colour">TFT_CYAN</field>
+          </block>
+        </value>
+        <next>
+          <block type="mic" id="zZ*0z^_Gb)i{td*)CrE$">
+            <next>
+              <block type="tft_write" id="v^.fQ%/Lh|k6xIw,agjg">
+                <value name="TEXT">
+                  <shadow type="text" id="(13D?F2M?~Hp9wl0?,`$">
+                    <field name="TEXT">Clap Detection Init...</field>
+                  </shadow>
+                </value>
+                <value name="textSize">
+                  <shadow type="math_number" id="/=SuXF2s2J~CP5Lbndpj">
+                    <field name="NUM">2</field>
+                  </shadow>
+                </value>
+                <value name="ValX">
+                  <shadow type="math_number" id="uf#9*TnfL0(:WHPnB0@o">
+                    <field name="NUM">10</field>
+                  </shadow>
+                </value>
+                <value name="ValY">
+                  <shadow type="math_number" id="`]?m5VQpxOS27J+rouUW">
+                    <field name="NUM">100</field>
+                  </shadow>
+                </value>
+                <value name="Colour">
+                  <block type="Colour" id="Ba-gGBEy%sA3W|zqT}Of">
+                    <field name="Colour">TFT_BLACK</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="delay_init" id="Jph0%=Fe{yEbiaAFYjjb">
+                    <value name="X">
+                      <shadow type="math_number" id=",EJQs_Yk7^?TX+NiFxVj">
+                        <field name="NUM">2000</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="tft_fillScreen" id="UCpH?*zk04R15p:{)cBZ">
+                        <value name="Colour">
+                          <block type="Colour" id="IKQ1%f]3LlhFq|7fc:yJ">
+                            <field name="Colour">TFT_CYAN</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="tft_write" id="pS.w(7BT)QvFvgFGO9qH">
+                            <value name="TEXT">
+                              <shadow type="text" id="5v45_tI~l0Q]_=#ILHLb">
+                                <field name="TEXT">Clap Count</field>
+                              </shadow>
+                            </value>
+                            <value name="textSize">
+                              <shadow type="math_number" id="baRc.#H^+PNeH(n6vB#d">
+                                <field name="NUM">3</field>
+                              </shadow>
+                            </value>
+                            <value name="ValX">
+                              <shadow type="math_number" id=".$P}#3xiZ4W[^u8.zU?O">
+                                <field name="NUM">60</field>
+                              </shadow>
+                            </value>
+                            <value name="ValY">
+                              <shadow type="math_number" id="%Mb7A8dc/R`;ypQYvt60">
+                                <field name="NUM">60</field>
+                              </shadow>
+                            </value>
+                            <value name="Colour">
+                              <block type="Colour" id="x0K{z+vfu5Wqq+NW3]=1">
+                                <field name="Colour">TFT_BLACK</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="LOOP">
+      <block type="clapThreshold" id="}I^Fat0`5cSS.|)_}rg1">
+        <value name="Threshold">
+          <shadow type="math_number" id=",!rERK$3XT=rijEoYND^">
+            <field name="NUM">40</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="readClap" id="h8v)vr|Uv*m}m/eXgmE?">
+            <value name="textSize">
+              <shadow type="math_number" id="OYvvqU0*K5icvm~mLFNN">
+                <field name="NUM">5</field>
+              </shadow>
+            </value>
+            <value name="ValX">
+              <shadow type="math_number" id="5:pz@CZBZ/z?MtRrV-8Q">
+                <field name="NUM">140</field>
+              </shadow>
+            </value>
+            <value name="ValY">
+              <shadow type="math_number" id="D=$82Z]`Fc$K]!TX/@H9">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+            <value name="W">
+              <shadow type="math_number" id="n{v#ugx{i:-wKYxHo3)r">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+            <value name="H">
+              <shadow type="math_number" id="$aO?0Nm~8x_$o1v2*A$x">
+                <field name="NUM">35</field>
+              </shadow>
+            </value>
+            <value name="Colour">
+              <block type="Colour" id="dHdaJy*8Fh78~kd),7^;">
+                <field name="Colour">TFT_CYAN</field>
+              </block>
+            </value>
+            <next>
+              <block type="delay_init" id="-[)3_AMiu;uTwCi6F|1I">
+                <value name="X">
+                  <shadow type="math_number" id="9Eu[Q+ZnLnx(:eGTHeQ!">
+                    <field name="NUM">10</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
