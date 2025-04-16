@@ -1,0 +1,134 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_QOREXKIT,CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO</toolboxcategories>
+  <toolbox>toolbox_none</toolbox>
+  <block type="base_setup_loop" id="gR.Z/}=B,m@.+0{0jfr}" x="13" y="238">
+    <statement name="DO">
+      <block type="variables_set_init" id=";`@F|Tu.*{Cb+8nT=^N~">
+        <field name="VAR">lastClapCount</field>
+        <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+        <value name="VALUE">
+          <block type="math_number" id="|:;0(4U)~2,a4cERa//J">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set_init" id="(wG+_*R`nJ}gydd{-Z:{">
+            <field name="VAR">currentClapCount</field>
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <next>
+              <block type="mic" id="zZ*0z^_Gb)i{td*)CrE$">
+                <next>
+                  <block type="delay_init" id="Jph0%=Fe{yEbiaAFYjjb">
+                    <value name="X">
+                      <shadow type="math_number" id=",EJQs_Yk7^?TX+NiFxVj">
+                        <field name="NUM">2000</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="LOOP">
+      <block type="clapThreshold" id="}I^Fat0`5cSS.|)_}rg1">
+        <value name="Threshold">
+          <shadow type="math_number" id=",!rERK$3XT=rijEoYND^">
+            <field name="NUM">40</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="readClap" id="h8v)vr|Uv*m}m/eXgmE?">
+            <value name="textSize">
+              <shadow type="math_number" id="OYvvqU0*K5icvm~mLFNN">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="ValX">
+              <shadow type="math_number" id="5:pz@CZBZ/z?MtRrV-8Q">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="ValY">
+              <shadow type="math_number" id="D=$82Z]`Fc$K]!TX/@H9">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="W">
+              <shadow type="math_number" id="n{v#ugx{i:-wKYxHo3)r">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="H">
+              <shadow type="math_number" id="$aO?0Nm~8x_$o1v2*A$x">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="Colour">
+              <block type="math_number" id="d[6Zec9=q)3BA$T~@=Cy">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="ak?NVaptVr6)]g~#6f_s">
+                <field name="VAR">currentClapCount</field>
+                <value name="VALUE">
+                  <block type="getClapCount" id="LIfbgF;-kbeITj|+A%t["></block>
+                </value>
+                <next>
+                  <block type="controls_if" id="uW2,8+N4Od=b$%wpmW;o">
+                    <value name="IF0">
+                      <block type="logic_compare" id="!j%HhV0B+wOtFzAI{4cb">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block type="variables_get" id=";By-J[2TB6/mm6b:BZCU">
+                            <field name="VAR">currentClapCount</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="variables_get" id="Ki(ynpq?K/zFybNfUQ?a">
+                            <field name="VAR">lastClapCount</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="serial_println" id=",h(WWy?_2-CX~U87:5wN">
+                        <value name="CONTENT">
+                          <shadow type="text" id=";B~]f^gtFNTrpl:_xp*P">
+                            <field name="TEXT">Clap Detected!</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="r:4c+LH!Su?x3AML/_Kc">
+                            <field name="VAR">currentClapCount</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="5^)1?veogst-x(=:@!nh">
+                                <field name="VAR">currentClapCount</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="delay_init" id="-[)3_AMiu;uTwCi6F|1I">
+                        <value name="X">
+                          <shadow type="math_number" id="9Eu[Q+ZnLnx(:eGTHeQ!">
+                            <field name="NUM">10</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
